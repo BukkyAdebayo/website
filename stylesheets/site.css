@@ -1,0 +1,148 @@
+@font-face { font-family: 'Glyphicons Halflings'; src: url('../fonts/glyphicons-halflings-regular.eot'); src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg'); } .glyphicon { position: relative; top: 1px; display: inline-block; font-family: 'Glyphicons Halflings'; font-style: normal; font-weight: normal; line-height: 1; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; } .glyphicon-home:before { content: "\e021"; }.glyphicon-heart-empty:before { content: "\e143"; } .glyphicon-chevron-left:before { content: "\e079"; } .glyphicon-chevron-right:before { content: "\e080"; }
+@font-face { font-family: 'Varela Round'; src: url('../fonts/VarelaRound-Regular.otf') format('opentype'); font-weight: normal; font-style: normal; }
+
+/* http://css-tricks.com/preventing-the-performance-hit-from-custom-fonts/ */
+
+/* overides for bootstrap */
+/* navbar overrides for tagline 
+.navbar-fixed-top.nav-smaller { top: 0; padding-bottom: 5px; } .navbar.navbar-inverse.navbar-fixed-top { top: 25px; }
+*/
+/*some style overrides aren't needed!!! */
+.navbar-fixed-top .nav { padding: 5px 0px; }
+.navbar-inverse .navbar-text { color: #ffffff; }
+.navbar-fixed-top .navbar-brand { padding: 0 5px; }
+.navbar-fixed-top { top: 0; border-width: 0 0 1px; }
+.navbar-inverse .navbar-link:hover { color: #ecdbff; }
+.navbar-inverse .navbar-toggle { border-color: #8e44ad; }
+.navbar .navbar-toggle:hover .icon-bar { background-color: #8e44ad; }
+.navbar-inverse .navbar-toggle .icon-bar { background-color: #ecf0f1; }
+.navbar-nav > li > a { padding-top: 10px; padding-bottom: 10px; line-height: 21px; }
+.navbar-inverse .navbar-nav > .open > a:focus { background-color: #8e44ad; color: #ecdbff; }
+.navbar-fixed-top, .navbar-wrapper, .navbar-inverse { background-color: #9b59b6; border-color: #8e44ad; }
+.navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus { background-color: transparent; }
+.navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-nav { margin: 6px 2px; }
+.navbar-inverse .navbar-brand:hover, .navbar-inverse .navbar-brand:focus { color: #ffffff; background-color: transparent; }
+.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus { color: #ecdbff; background-color: #8e44ad;; }
+.navbar-inverse .navbar-nav > li > a, .navbar-inverse .navbar-brand, .navbar-inverse .navbar-link, .navbar-inverse .navbar-text { color: #ecf0f1; }
+.navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:focus { color: #ecdbff; background-color: #8e44ad; }
+.navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus { background-color: #8e44ad; color: #FFF; }
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus { color: #ecdbff; background-color: #8e44ad; }
+.navbar-inverse .navbar-nav .open .dropdown-menu > .active > a, .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:focus { color: #ecdbff; background-color: #8e44ad; }
+
+
+body { font-family: "Varela Round", sans-serif; font-size: 15px; line-height: 1.42857143; color: #222222; background-color: #ffffff; }
+a:hover { color: #713b87; } 
+
+/* helpers */
+.wecycler-color-deeper { color: #713b87; } 
+.wecycler-color, a { color: #9B59B6; } 
+.green {color:#74b659;}
+.block { display: block; }
+.whiten { color: #fff; } 
+.centered { text-align: center; }
+.tagline{ margin-right: -15px; margin-left: -15px; margin-bottom: 90px }
+.smaller { font-size: 0.75em; font-weight: lighter; }
+.replace-list-defaults { padding: 0; margin: 0; list-style: none; }
+.padding-top-lg { padding-top: 12%; }
+.margin-top-md { margin-top: 12%; }
+.margin-bottom-md { margin-bottom: 20px; }
+.padding-bottom-sm { padding-bottom: 5px; } 
+.padding-zero-margin-zero { margin: 0; padding: 0; } 
+.margin-top-zero { margin-top: 0; } 
+.bottom-zero { margin-bottom: 0; }
+.news-sources { width: 252px; }
+
+/* content */
+#content .container { margin-bottom: 20px; }
+#content p { text-align: justify; }
+
+/* carousel section */
+#myCarousel, .carousel { margin-bottom: 20px; }
+  /*ADD BACKGROUND TO CAROUSEL CAPTION TO ENSURE READABILITY OF TEXT */
+.container.caption-background .carousel-caption { left: 0%; right: 0%; text-align: left; width: 100%; padding: 0 2%; margin: 0;}
+
+.contact-banner-caption, .container.caption-background .carousel-caption{ background: rgb(0, 0, 0) transparent; background: rgba(0, 0, 0, 0.6); filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000); -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)"; }
+
+/*contact banner*/
+#contact-banner {  min-width: 100%; width: 100%; height: 280px; position: relative;
+  background: url('../images/contact-banner.png') no-repeat; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;
+}
+.contact-banner-header {position:absolute;top:30%;left:30%;font-size:3.6em;font-weight:bolder; }
+.contact-banner-caption {position:absolute;bottom:0;margin-top:-0.5em;width:100%;text-align:center; padding-left:32%; }
+
+/*recycler section on index page*/
+#recycle h2 { font-size: 1.7em; }
+#recycle img { min-width: 300px; max-height: 135px; max-width: 30%; }
+.list-items li { padding: 5px; }
+.list-items img { max-height: 48px; }
+
+/*the team page*/
+.media img { height: 160px; }
+/*#the-team { background-color:  rgb(155,89,182) transparent; background-color: rgba(155,89,182,0.6);  }*/
+#the-team ul { list-style: none; }
+#the-team img { width: 100%; }
+#the-team .person { cursor: pointer; }
+#the-team .person p { display: none; }
+
+#the-team .person span { position:absolute;bottom:0;margin-top:-0.5em;width:100%;text-align:center;height:100%;
+background: rgb(155,89,182) transparent; background-color: rgba(155,89,182, 0.6); 
+/*need to fix this colors for ie still black*/
+filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000); -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)"; }
+
+/*the news*/
+.news-image { max-width: 320px; }
+
+/*join us*/
+.join-us #content { background-color: #59b66d; color: #fff; }
+.join-us #content ul { list-style: none; }
+.join-us #content .container { margin-bottom: 0; }
+
+/*gotop*/
+#gotop {z-index: 9999; position: fixed; top: 76%; right: 10px; display: none;}
+#gotop i:hover {color: #C32F34;}
+/* icons */
+i { padding: 0 10px 0 0; color: #ECF0F1; line-height: 1; } i:hover { color: #74b659; text-decoration: none; }
+.size-32 { font-size: 32px; }
+.inline-icon {  padding-right: 30px; width: 10%; }
+.icon-text { color: #ecf0f1; }
+
+/*image gallery*/
+#wecycler-image-gallery .container { width: 100%; }
+#wecycler-image-gallery div { padding: 0; margin: 0; }
+
+/* sponsors section */
+#sponsors .row { padding: 0; }
+#sponsors {
+  min-width: 100%;
+  width: 100%;
+  height: 180px;
+
+  background: url('../images/sponsors.jpg') no-repeat; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;
+}
+
+
+/* footer */
+footer, .footer { border-top: 2px solid #fff; background-color: #8459b6; color: #fff; padding-bottom: 20px; }
+footer .row, .footer .row { margin: 0; padding: 0; } 
+footer .divider, .footer .divider { border: none; } 
+footer h3, .footer h3, footer a, .footer a { color: #fff; } 
+footer .glyphicon.glyphicon-home { font-size: 22px; }
+
+@media(min-width:480px) {
+  .margin-top-md { margin-top: 9%; }
+}
+
+@media(min-width:768px) {
+  .margin-top-md { margin-top: 5%; }
+  .padding-top-md { margin-top: 5%; }
+  footer h3, .footer h3, footer a, .footer a { margin-bottom: 20px; } 
+  .navbar-fixed-top .nav { padding: 5px 0; }
+  .navbar-fixed-top .navbar-brand { padding: 5px 0; }
+  .margin-bottom-md { margin-bottom: 40px; }
+  footer input[type='email'] { height: 48px; }
+
+}
+
+
+
+
